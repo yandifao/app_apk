@@ -1,0 +1,65 @@
+ion-header {
+    ion-toolbar {
+        ion-title {
+            .logo {
+                align-items: center;
+                font-size: 12px;
+
+                img {
+                    width: 78px;
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    .btn-primary {
+        min-height: 100px;
+        padding: 0;
+        border-radius: 10px;
+        width: 65%;
+        display: block;
+        margin: 10px auto;
+
+        &.scan {
+            background: #fff url('../../assets/images/layout1.svg') no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            &:active {
+                background: #f9f9f9 url('../../assets/images/layout1.svg') no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        &.visit {
+            background: #fff url('../../assets//images/layout2.svg') no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            &:active {
+                background: #f9f9f9 url('../../assets/images/layout2.svg') no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        &.cart {
+            background: #fff url('../../assets/images/layout3.svg') no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            &:active {
+                background: #f9f9f9 url('../../assets/images/layout3.svg') no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

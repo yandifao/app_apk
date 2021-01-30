@@ -1,0 +1,57 @@
+<!-- HEADER -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back();">
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Hasil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- END HEADER -->
+
+<!-- CONTENT -->
+<ion-content class="ion-padding">
+  <div class="flex mb-10" *ngFor="let item of data">
+    <div class="img-responsive mt-50" [ngStyle]="parseImage(item.image)" (click)="openImage('https://www.grobmart.com/image/'+item.image)">
+
+    </div>
+    <div class="content-box">
+      <ion-list>
+        <ion-list-header>
+          <ion-label>Judul</ion-label>
+        </ion-list-header>
+        <ion-item>{{item.name}}</ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>Harga</ion-label>
+        </ion-list-header>
+        <div *ngIf="item.special > 0">
+          <ion-item>
+            <span class="strikethrough">{{formatRupiah(item.basic_price,'Rp.')}}</span>
+            &nbsp;{{formatRupiah(item.special,'Rp.')}}
+          </ion-item>
+        </div>
+        <div *ngIf="!item.special">
+          <ion-item>{{formatRupiah(item.basic_price,'Rp.')}}</ion-item>
+        </div>
+      </ion-list>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>Ketersediaan</ion-label>
+        </ion-list-header>
+        <ion-item><span [id]="item.product_id"></span></ion-item>
+      </ion-list>
+      <button class="btn-primary mt-10" (click)="beli(item.keyword, item.product_id);">Selengkapnya</button>
+    </div>
+  </div>
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Load more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<!-- END CONTENT -->

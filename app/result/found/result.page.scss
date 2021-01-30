@@ -1,0 +1,36 @@
+.flex {
+    padding: 20px;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, .1);
+    background: white;
+    border-radius: 10px;
+
+    .img-responsive {
+        width: 120px;
+        margin-right: 10px;
+    }
+
+    .content-box {
+        width: 100%;
+
+        .strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+    }
+}
+
+.stocking-primary {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3880ff;
+}
+
+.stocking-warning {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffce00;
+}
+
+.btn-primary {
+    padding: 10px !important;
+}

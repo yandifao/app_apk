@@ -1,0 +1,119 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #3F51B5;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+
+    &:active {
+        background: #4E51B5;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-gold {
+    background: #ffc107;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+
+    &:active {
+        background: #eec107;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-danger {
+    background: #f44336;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+
+    &:active {
+        background: #ff2a1b;
+    }
+}
+
+ion-item {
+    --highlight-color-focused: #3F51B5;
+    --highlight-color-invalid: red;
+    --highlight-color-valid: #3F51B5;
+    --background: transparent !important;
+}
+
+ion-label {
+    color: #9e9e9e !important;
+}
+
+ion-toolbar {
+    --ion-toolbar-background: #3F51B5;
+    --ion-toolbar-background-color: #4E51B5;
+    --color: #fff;
+}
+
+.blue {
+    color: #3f51b5 !important;
+}
+.gold {
+    color: #ffc107 !important;
+}
+
+.grid {
+    display: grid !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}

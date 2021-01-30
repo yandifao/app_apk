@@ -1,0 +1,23 @@
+.logo {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 15px;
+    font-weight: bold;
+    color: #525252;
+    letter-spacing: 3px;
+
+    .img-responsive {
+        width: 200px;
+    }
+}
+
+.btn-primary {
+    padding: 10px !important;
+    margin-right: 10px;
+}
+.btn-gold {
+    padding: 10px !important;
+}
